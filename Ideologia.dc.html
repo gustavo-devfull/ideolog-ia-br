@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #ffffff; color: #17181A; font-family: "DM Sans", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #1A73E8; text-decoration: none; }
+  a:hover { color: #174EA6; }
+  summary { list-style: none; cursor: pointer; }
+  summary::-webkit-details-marker { display: none; }
+  @keyframes spin360 { to { transform: rotate(360deg); } }
+  @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+</style>
+</helmet>
+
+<div style="max-width: 1180px; margin: 0 auto; padding: 0 24px 0;">
+
+  <header style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0; position: sticky; top: 0; background: rgba(255,255,255,0.88); backdrop-filter: blur(12px); z-index: 20; border-bottom: 1px solid #EDEFF2;">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true">
+        <circle cx="13" cy="13" r="12" fill="none" stroke="#EDEFF2" stroke-width="2"></circle>
+        <path d="M13 1a12 12 0 0 1 12 12" fill="none" stroke="#4285F4" stroke-width="3" stroke-linecap="round"></path>
+        <path d="M25 13a12 12 0 0 1-12 12" fill="none" stroke="#EA4335" stroke-width="3" stroke-linecap="round"></path>
+        <path d="M13 25A12 12 0 0 1 1 13" fill="none" stroke="#FBBC05" stroke-width="3" stroke-linecap="round"></path>
+        <path d="M1 13A12 12 0 0 1 13 1" fill="none" stroke="#34A853" stroke-width="3" stroke-linecap="round"></path>
+        <circle cx="13" cy="13" r="3.5" fill="#17181A"></circle>
+      </svg>
+      <span style="font-family: Syncopate, sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 0.02em;">ideolog<span style="color:#4285F4;">.ia</span><span style="color:#9AA0A6;">.br</span></span>
+    </div>
+    <nav style="display: flex; align-items: center; gap: 28px;">
+      <a href="#valor" style="color:#5F6368; font-size:14px; font-weight:500;">Por que vale</a>
+      <a href="#anatomia" style="color:#5F6368; font-size:14px; font-weight:500;">Anatomia</a>
+      <a href="#faq" style="color:#5F6368; font-size:14px; font-weight:500;">Dúvidas</a>
+      <a href="https://wa.me/5516997520110" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:8px; background:#17181A; color:#fff; padding:11px 18px; border-radius:999px; font-size:13px; font-weight:700; letter-spacing:0.01em;" style-hover="background:#4285F4; color:#fff;">
+        <span style="width:7px; height:7px; border-radius:50%; background:#34A853; display:inline-block;"></span>
+        Falar com Gustavo
+      </a>
+    </nav>
+  </header>
+
+  <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: center; padding: 72px 0 80px;">
+    <div>
+      <div style="display:inline-flex; align-items:center; gap:10px; border:1px solid #E3E6EA; border-radius:999px; padding:7px 14px; font-family:Syncopate, sans-serif; font-size:9.5px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#5F6368;">
+        <span style="width:7px; height:7px; border-radius:50%; background:#EA4335; display:inline-block;"></span>
+        À venda — transferência em até 24h
+      </div>
+      <h1 style="font-family:Syncopate, sans-serif; font-weight:700; font-size: clamp(30px, 5.4vw, 62px); line-height:1.06; letter-spacing:-0.03em; margin:26px 0 0; text-wrap:balance;">
+        ideolog<span style="color:#4285F4;">.ia</span><span style="color:#BDC1C6;">.br</span>
+      </h1>
+      <p style="font-size: clamp(17px, 1.5vw, 21px); line-height:1.55; color:#3C4043; max-width:34em; margin:22px 0 0;">
+        Uma palavra inteira do português — <em style="font-style:italic; color:#17181A;">ideologia</em> — que já carrega <strong style="color:#1A73E8; font-weight:700;">.ia</strong> dentro dela. É o caminho mais curto entre a sua marca e a ideia de inteligência artificial no Brasil.
+      </p>
+      <div style="display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin-top:34px;">
+        <a href="https://wa.me/5516997520110" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:10px; background:#1A73E8; color:#fff; padding:16px 26px; border-radius:999px; font-size:15px; font-weight:700; box-shadow:0 10px 24px rgba(26,115,232,0.28);" style-hover="background:#174EA6; color:#fff;">
+          Fazer uma proposta
+          <span style="font-size:17px; line-height:1;">→</span>
+        </a>
+        <a href="#valor" style="display:inline-flex; align-items:center; gap:8px; color:#17181A; padding:15px 22px; border-radius:999px; border:1px solid #DADCE0; font-size:15px; font-weight:600;" style-hover="border-color:#17181A; color:#17181A;">
+          Ver por que ele vale
+        </a>
+      </div>
+      <p style="display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin:22px 0 0; font-size:13.5px; color:#5F6368;">
+        <span style="width:7px; height:7px; border-radius:50%; background:#34A853; display:inline-block;"></span>
+        Negociação direta com o dono · Gustavo · (16) 99752-0110 · sem leilão, sem corretor
+      </p>
+    </div>
+
+    <sc-if value="{{ showIllustrations }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex; justify-content:center; align-items:center;">
+        <svg viewBox="0 0 420 420" style="width:100%; max-width:420px; height:auto; animation: floaty 7s ease-in-out infinite;" role="img" aria-label="Ilustração abstrata de um domínio de inteligência artificial">
+          <defs>
+            <pattern id="dotgrid" width="22" height="22" patternUnits="userSpaceOnUse">
+              <circle cx="1.6" cy="1.6" r="1.6" fill="#E8EAED"></circle>
+            </pattern>
+          </defs>
+          <rect x="10" y="10" width="400" height="400" rx="28" fill="url(#dotgrid)"></rect>
+          <circle cx="210" cy="210" r="150" fill="none" stroke="#F1F3F4" stroke-width="2"></circle>
+          <path d="M210 60a150 150 0 0 1 150 150" fill="none" stroke="#4285F4" stroke-width="22" stroke-linecap="round"></path>
+          <path d="M360 210a150 150 0 0 1-150 150" fill="none" stroke="#EA4335" stroke-width="22" stroke-linecap="round"></path>
+          <path d="M210 360A150 150 0 0 1 60 210" fill="none" stroke="#FBBC05" stroke-width="22" stroke-linecap="round"></path>
+          <path d="M60 210A150 150 0 0 1 210 60" fill="none" stroke="#34A853" stroke-width="22" stroke-linecap="round"></path>
+          <circle cx="210" cy="210" r="98" fill="#17181A"></circle>
+          <text x="210" y="222" text-anchor="middle" fill="#ffffff" style="font-family:Syncopate, sans-serif; font-weight:700; font-size:40px; letter-spacing:-0.02em;">.ia</text>
+          <circle cx="210" cy="60" r="9" fill="#ffffff" stroke="#4285F4" stroke-width="4"></circle>
+          <circle cx="360" cy="210" r="9" fill="#ffffff" stroke="#EA4335" stroke-width="4"></circle>
+          <circle cx="210" cy="360" r="9" fill="#ffffff" stroke="#FBBC05" stroke-width="4"></circle>
+          <circle cx="60" cy="210" r="9" fill="#ffffff" stroke="#34A853" stroke-width="4"></circle>
+        </svg>
+      </div>
+    </sc-if>
+  </section>
+
+  <sc-if value="{{ showStatsBar }}" hint-placeholder-val="{{ true }}">
+    <section style="display:grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap:1px; background:#E8EAED; border:1px solid #E8EAED; border-radius:20px; overflow:hidden;">
+      <div style="background:#fff; padding:26px 24px;">
+        <div style="font-family:Syncopate, sans-serif; font-weight:700; font-size:30px; color:#4285F4; letter-spacing:-0.03em;">1</div>
+        <p style="margin:10px 0 0; font-size:13.5px; line-height:1.5; color:#5F6368;">palavra real do português. Sem hífen, sem invenção, sem letra sobrando.</p>
+      </div>
+      <div style="background:#fff; padding:26px 24px;">
+        <div style="font-family:Syncopate, sans-serif; font-weight:700; font-size:30px; color:#EA4335; letter-spacing:-0.03em;">.ia</div>
+        <p style="margin:10px 0 0; font-size:13.5px; line-height:1.5; color:#5F6368;">a sigla de inteligência artificial embutida no próprio nome.</p>
+      </div>
+      <div style="background:#fff; padding:26px 24px;">
+        <div style="font-family:Syncopate, sans-serif; font-weight:700; font-size:30px; color:#F9AB00; letter-spacing:-0.03em;">13</div>
+        <p style="margin:10px 0 0; font-size:13.5px; line-height:1.5; color:#5F6368;">caracteres que ninguém esquece depois de ouvir uma vez.</p>
+      </div>
+      <div style="background:#fff; padding:26px 24px;">
+        <div style="font-family:Syncopate, sans-serif; font-weight:700; font-size:30px; color:#34A853; letter-spacing:-0.03em;">24h</div>
+        <p style="margin:10px 0 0; font-size:13.5px; line-height:1.5; color:#5F6368;">para a transferência sair no Registro.br depois do acordo.</p>
+      </div>
+    </section>
+  </sc-if>
+
+  <section id="valor" style="padding:96px 0 0; scroll-margin-top:90px;">
+    <div style="max-width:720px;">
+      <div style="font-family:Syncopate, sans-serif; font-size:9.5px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:#9AA0A6;">O argumento</div>
+      <h2 style="font-family:Syncopate, sans-serif; font-weight:700; font-size: clamp(22px, 3vw, 36px); line-height:1.18; letter-spacing:-0.025em; margin:16px 0 0; text-wrap:balance;">Por que ele vale mais que um nome bonito</h2>
+      <p style="font-size:17px; line-height:1.6; color:#5F6368; margin:16px 0 0;">Quatro razões objetivas — e nenhuma delas é sorte. Um nome assim não se registra: ou já é seu, ou é de outro.</p>
+    </div>
+
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:18px; margin-top:40px;">
+      <article style="border:1px solid #E8EAED; border-radius:20px; padding:26px; background:#fff; transition:transform .2s ease, box-shadow .2s ease;" style-hover="transform:translateY(-4px); box-shadow:0 16px 40px rgba(23,24,26,0.08);">
+        <svg width="38" height="38" viewBox="0 0 38 38" aria-hidden="true">
+          <rect x="1.5" y="1.5" width="35" height="35" rx="10" fill="#E8F0FE"></rect>
+          <circle cx="19" cy="19" r="9" fill="none" stroke="#4285F4" stroke-width="3"></circle>
+          <circle cx="19" cy="19" r="2.6" fill="#4285F4"></circle>
+        </svg>
+        <div style="font-family:Syncopate, sans-serif; font-size:9px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#4285F4; margin-top:20px;">01 — memória</div>
+        <h3 style="font-size:19px; font-weight:700; line-height:1.3; margin:10px 0 0;">Um trocadilho que gruda</h3>
+        <p style="font-size:14.5px; line-height:1.6; color:#5F6368; margin:10px 0 0;">Você fala “ideologia ponto br” e a pessoa já digitou certo. Nada de repetir letra por letra ao telefone: o nome se explica sozinho e vira mídia gratuita todo dia.</p>
+      </article>
+
+      <article style="border:1px solid #E8EAED; border-radius:20px; padding:26px; background:#fff; transition:transform .2s ease, box-shadow .2s ease;" style-hover="transform:translateY(-4px); box-shadow:0 16px 40px rgba(23,24,26,0.08);">
+        <svg width="38" height="38" viewBox="0 0 38 38" aria-hidden="true">
+          <rect x="1.5" y="1.5" width="35" height="35" rx="10" fill="#FCE8E6"></rect>
+          <path d="M11 24 L19 12 L27 24" fill="none" stroke="#EA4335" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        <div style="font-family:Syncopate, sans-serif; font-size:9px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#EA4335; margin-top:20px;">02 — posicionamento</div>
+        <h3 style="font-size:19px; font-weight:700; line-height:1.3; margin:10px 0 0;">Diz o que você faz antes do pitch</h3>
+        <p style="font-size:14.5px; line-height:1.6; color:#5F6368; margin:10px 0 0;">O “.ia” carimba sua empresa como inteligência artificial em todo lugar onde o link aparece: assinatura de e-mail, slide, cartão, post, proposta comercial.</p>
+      </article>
+
+      <article style="border:1px solid #E8EAED; border-radius:20px; padding:26px; background:#fff; transition:transform .2s ease, box-shadow .2s ease;" style-hover="transform:translateY(-4px); box-shadow:0 16px 40px rgba(23,24,26,0.08);">
+        <svg width="38" height="38" viewBox="0 0 38 38" aria-hidden="true">
+          <rect x="1.5" y="1.5" width="35" height="35" rx="10" fill="#FEF7E0"></rect>
+          <path d="M19 10v18M10 19h18" stroke="#F9AB00" stroke-width="3" stroke-linecap="round"></path>
+          <circle cx="19" cy="19" r="6" fill="none" stroke="#F9AB00" stroke-width="3"></circle>
+        </svg>
+        <div style="font-family:Syncopate, sans-serif; font-size:9px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#B06000; margin-top:20px;">03 — escassez</div>
+        <h3 style="font-size:19px; font-weight:700; line-height:1.3; margin:10px 0 0;">Palavra exata não se fabrica</h3>
+        <p style="font-size:14.5px; line-height:1.6; color:#5F6368; margin:10px 0 0;">Dá para inventar mil marcas. Não dá para inventar outra palavra do português que termine em “ia.br” com esse peso conceitual. Existe uma — e ela está nesta página.</p>
+      </article>
+
+      <article style="border:1px solid #E8EAED; border-radius:20px; padding:26px; background:#fff; transition:transform .2s ease, box-shadow .2s ease;" style-hover="transform:translateY(-4px); box-shadow:0 16px 40px rgba(23,24,26,0.08);">
+        <svg width="38" height="38" viewBox="0 0 38 38" aria-hidden="true">
+          <rect x="1.5" y="1.5" width="35" height="35" rx="10" fill="#E6F4EA"></rect>
+          <path d="M19 10l8 4v6c0 5-3.5 7.4-8 8-4.5-.6-8-3-8-8v-6l8-4z" fill="none" stroke="#34A853" stroke-width="3" stroke-linejoin="round"></path>
+        </svg>
+        <div style="font-family:Syncopate, sans-serif; font-size:9px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:#188038; margin-top:20px;">04 — autoridade</div>
+        <h3 style="font-size:19px; font-weight:700; line-height:1.3; margin:10px 0 0;">O peso institucional do .br</h3>
+        <p style="font-size:14.5px; line-height:1.6; color:#5F6368; margin:10px 0 0;">.br passa confiança para o público brasileiro, ajuda na busca local e sinaliza operação séria no país — não um projeto de fim de semana hospedado em qualquer lugar.</p>
+      </article>
+    </div>
+  </section>
+
+  <sc-if value="{{ showAnatomy }}" hint-placeholder-val="{{ true }}">
+    <section id="anatomia" style="padding:96px 0 0; scroll-margin-top:90px;">
+      <div style="border:1px solid #E8EAED; border-radius:24px; overflow:hidden; background:#FAFBFC;">
+        <div style="padding:34px 32px 28px; display:flex; flex-wrap:wrap; gap:20px; align-items:flex-end; justify-content:space-between; border-bottom:1px solid #E8EAED;">
+          <div style="max-width:560px;">
+            <div style="font-family:Syncopate, sans-serif; font-size:9.5px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:#9AA0A6;">Anatomia</div>
+            <h2 style="font-family:Syncopate, sans-serif; font-weight:700; font-size: clamp(20px, 2.4vw, 28px); line-height:1.2; letter-spacing:-0.025em; margin:14px 0 0;">Três nomes pelo preço de um</h2>
+            <p style="font-size:16px; line-height:1.6; color:#5F6368; margin:12px 0 0;">O mesmo endereço se lê de três formas ao mesmo tempo. Escolha a leitura que serve ao seu negócio — as outras duas vêm de graça.</p>
+          </div>
+          <svg width="112" height="112" viewBox="0 0 112 112" aria-hidden="true" style="flex:none;">
+            <circle cx="40" cy="56" r="26" fill="#4285F4" opacity="0.85"></circle>
+            <circle cx="56" cy="40" r="26" fill="#FBBC05" opacity="0.8"></circle>
+            <circle cx="72" cy="56" r="26" fill="#34A853" opacity="0.7"></circle>
+          </svg>
+        </div>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap:1px; background:#E8EAED;">
+          <div style="background:#fff; padding:28px 26px;">
+            <div style="font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:15px; color:#5F6368;"><span style="background:#E6F4EA; color:#188038; padding:3px 5px; border-radius:4px; font-weight:700;">ideologia</span>.br</div>
+            <h3 style="font-size:16px; font-weight:700; margin:16px 0 0;">A leitura conceitual</h3>
+            <p style="font-size:14px; line-height:1.6; color:#5F6368; margin:8px 0 0;">Visão de mundo, manifesto, ponto de vista. Perfeito para mídia, think tanks, política, cultura e branding.</p>
+          </div>
+          <div style="background:#fff; padding:28px 26px;">
+            <div style="font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:15px; color:#5F6368;">ideolog<span style="background:#E8F0FE; color:#1A73E8; padding:3px 5px; border-radius:4px; font-weight:700;">.ia</span>.br</div>
+            <h3 style="font-size:16px; font-weight:700; margin:16px 0 0;">A leitura tech</h3>
+            <p style="font-size:14px; line-height:1.6; color:#5F6368; margin:8px 0 0;">Laboratório, produto ou consultoria de inteligência artificial — com o termo dentro do próprio endereço.</p>
+          </div>
+          <div style="background:#fff; padding:28px 26px;">
+            <div style="font-family:ui-monospace, SFMono-Regular, Menlo, monospace; font-size:15px; color:#5F6368;">ideo<span style="background:#FEF7E0; color:#B06000; padding:3px 5px; border-radius:4px; font-weight:700;">log</span>.ia.br</div>
+            <h3 style="font-size:16px; font-weight:700; margin:16px 0 0;">A leitura de produto</h3>
+            <p style="font-size:14px; line-height:1.6; color:#5F6368; margin:8px 0 0;">Um log de ideias. Nome pronto para ferramenta de conhecimento, pesquisa, memória ou agentes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </sc-if>
+
+  <section style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:48px; padding:96px 0 0; align-items:start;">
+    <div>
+      <div style="font-family:Syncopate, sans-serif; font-size:9.5px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:#9AA0A6;">Público</div>
+      <h2 style="font-family:Syncopate, sans-serif; font-weight:700; font-size: clamp(20px, 2.6vw, 30px); line-height:1.2; letter-spacing:-0.025em; margin:14px 0 0;">Para quem faz sentido</h2>
+      <p style="font-size:16px; line-height:1.6; color:#5F6368; margin:14px 0 0;">Se você se reconhece em algum destes, o nome já é seu — falta só combinar o valor.</p>
+      <a href="https://wa.me/5516997520110" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:10px; margin-top:24px; background:#17181A; color:#fff; padding:15px 24px; border-radius:999px; font-size:14.5px; font-weight:700;" style-hover="background:#1A73E8; color:#fff;">
+        Chamar no WhatsApp
+        <span style="font-size:16px; line-height:1;">→</span>
+      </a>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:10px;">
+      <div style="display:flex; gap:16px; align-items:flex-start; border:1px solid #E8EAED; border-radius:16px; padding:18px 20px; background:#fff;" style-hover="border-color:#4285F4;">
+        <span style="width:10px; height:10px; border-radius:50%; background:#4285F4; margin-top:6px; flex:none;"></span>
+        <div><h3 style="font-size:15.5px; font-weight:700; margin:0;">Startups e labs de IA</h3><p style="font-size:14px; line-height:1.55; color:#5F6368; margin:6px 0 0;">Nome curto, nacional e autoexplicativo desde o dia zero.</p></div>
+      </div>
+      <div style="display:flex; gap:16px; align-items:flex-start; border:1px solid #E8EAED; border-radius:16px; padding:18px 20px; background:#fff;" style-hover="border-color:#EA4335;">
+        <span style="width:10px; height:10px; border-radius:50%; background:#EA4335; margin-top:6px; flex:none;"></span>
+        <div><h3 style="font-size:15.5px; font-weight:700; margin:0;">Consultorias e agências</h3><p style="font-size:14px; line-height:1.55; color:#5F6368; margin:6px 0 0;">Credibilidade imediata ao vender projetos de IA para empresas.</p></div>
+      </div>
+      <div style="display:flex; gap:16px; align-items:flex-start; border:1px solid #E8EAED; border-radius:16px; padding:18px 20px; background:#fff;" style-hover="border-color:#F9AB00;">
+        <span style="width:10px; height:10px; border-radius:50%; background:#FBBC05; margin-top:6px; flex:none;"></span>
+        <div><h3 style="font-size:15.5px; font-weight:700; margin:0;">Mídia, newsletters e podcasts</h3><p style="font-size:14px; line-height:1.55; color:#5F6368; margin:6px 0 0;">Ideias, tecnologia e sociedade em um endereço só.</p></div>
+      </div>
+      <div style="display:flex; gap:16px; align-items:flex-start; border:1px solid #E8EAED; border-radius:16px; padding:18px 20px; background:#fff;" style-hover="border-color:#34A853;">
+        <span style="width:10px; height:10px; border-radius:50%; background:#34A853; margin-top:6px; flex:none;"></span>
+        <div><h3 style="font-size:15.5px; font-weight:700; margin:0;">Think tanks e institutos</h3><p style="font-size:14px; line-height:1.55; color:#5F6368; margin:6px 0 0;">A leitura “ideologia” carrega gravidade institucional.</p></div>
+      </div>
+      <div style="display:flex; gap:16px; align-items:flex-start; border:1px solid #E8EAED; border-radius:16px; padding:18px 20px; background:#fff;" style-hover="border-color:#17181A;">
+        <span style="width:10px; height:10px; border-radius:50%; background:#17181A; margin-top:6px; flex:none;"></span>
+        <div><h3 style="font-size:15.5px; font-weight:700; margin:0;">Investidores em domínios</h3><p style="font-size:14px; line-height:1.55; color:#5F6368; margin:6px 0 0;">Ativo escasso, categoria em alta, revenda natural.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" style="padding:96px 0 0; scroll-margin-top:90px;">
+    <div style="display:flex; flex-wrap:wrap; gap:20px; align-items:flex-end; justify-content:space-between;">
+      <div>
+        <div style="font-family:Syncopate, sans-serif; font-size:9.5px; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:#9AA0A6;">Sem enrolação</div>
+        <h2 style="font-family:Syncopate, sans-serif; font-weight:700; font-size: clamp(20px, 2.6vw, 30px); line-height:1.2; letter-spacing:-0.025em; margin:14px 0 0;">Perguntas diretas</h2>
+      </div>
+      <p style="font-size:14.5px; color:#5F6368; margin:0;">Ficou outra dúvida? Manda no WhatsApp, respondo pessoalmente.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:10px; margin-top:32px;">
+      <details open="" style="border:1px solid #E8EAED; border-radius:16px; padding:20px 22px; background:#fff;">
+        <summary style="display:flex; align-items:center; justify-content:space-between; gap:16px; font-size:16px; font-weight:700;">O domínio está livre para transferência?<span style="color:#4285F4; font-size:20px; line-height:1;">+</span></summary>
+        <p style="font-size:14.5px; line-height:1.65; color:#5F6368; margin:12px 0 0;">Sim. Está registrado e regular no Registro.br, sem pendências. A transferência é feita por lá, direto entre as contas — leva minutos.</p>
+      </details>
+      <details style="border:1px solid #E8EAED; border-radius:16px; padding:20px 22px; background:#fff;">
+        <summary style="display:flex; align-items:center; justify-content:space-between; gap:16px; font-size:16px; font-weight:700;">Qual é o preço?<span style="color:#EA4335; font-size:20px; line-height:1;">+</span></summary>
+        <p style="font-size:14.5px; line-height:1.65; color:#5F6368; margin:12px 0 0;">Aberto a propostas. Chame no WhatsApp com um valor e a gente resolve rápido — sem leilão e sem intermediário cobrando comissão em cima.</p>
+      </details>
+      <details style="border:1px solid #E8EAED; border-radius:16px; padding:20px 22px; background:#fff;">
+        <summary style="display:flex; align-items:center; justify-content:space-between; gap:16px; font-size:16px; font-weight:700;">Aceita parcelamento?<span style="color:#F9AB00; font-size:20px; line-height:1;">+</span></summary>
+        <p style="font-size:14.5px; line-height:1.65; color:#5F6368; margin:12px 0 0;">Dá para conversar. Em valores maiores é possível combinar parcelamento, com a transferência concluída ao final do acordo.</p>
+      </details>
+      <details style="border:1px solid #E8EAED; border-radius:16px; padding:20px 22px; background:#fff;">
+        <summary style="display:flex; align-items:center; justify-content:space-between; gap:16px; font-size:16px; font-weight:700;">Como funciona o pagamento?<span style="color:#34A853; font-size:20px; line-height:1;">+</span></summary>
+        <p style="font-size:14.5px; line-height:1.65; color:#5F6368; margin:12px 0 0;">Pix ou transferência bancária. Se preferir mais segurança, também aceito fazer por intermediador de custódia (escrow) — a escolha é sua.</p>
+      </details>
+    </div>
+  </section>
+
+  <section style="margin:96px 0 0; border-radius:28px; background:#17181A; color:#fff; padding:64px 32px; text-align:center; position:relative; overflow:hidden;">
+    <div style="position:absolute; inset:0; pointer-events:none; display:flex; justify-content:center; align-items:center;">
+      <svg viewBox="0 0 600 300" style="width:110%; height:100%; opacity:0.5;" aria-hidden="true">
+        <circle cx="120" cy="60" r="90" fill="#4285F4" opacity="0.28"></circle>
+        <circle cx="480" cy="240" r="110" fill="#34A853" opacity="0.22"></circle>
+        <circle cx="520" cy="40" r="70" fill="#EA4335" opacity="0.2"></circle>
+        <circle cx="90" cy="250" r="60" fill="#FBBC05" opacity="0.2"></circle>
+      </svg>
+    </div>
+    <div style="position:relative;">
+      <div style="font-family:Syncopate, sans-serif; font-size:9.5px; font-weight:700; letter-spacing:0.2em; text-transform:uppercase; color:#9AA0A6;">Sem intermediários · sem leilão</div>
+      <h2 style="font-family:Syncopate, sans-serif; font-weight:700; font-size: clamp(24px, 3.6vw, 44px); line-height:1.12; letter-spacing:-0.03em; margin:20px auto 0; max-width:16em;">Faça sua proposta hoje</h2>
+      <p style="font-size:16.5px; line-height:1.6; color:#C7CBD1; max-width:34em; margin:18px auto 0;">Um nome desses sai de circulação uma vez. Respondo pessoalmente no WhatsApp e a transferência no Registro.br leva poucos minutos.</p>
+      <a href="https://wa.me/5516997520110" target="_blank" rel="noopener" style="display:inline-flex; align-items:center; gap:12px; margin-top:32px; background:#fff; color:#17181A; padding:17px 30px; border-radius:999px; font-size:16px; font-weight:700;" style-hover="background:#4285F4; color:#fff;">
+        <span style="width:8px; height:8px; border-radius:50%; background:#34A853; display:inline-block;"></span>
+        (16) 99752-0110 — Gustavo
+      </a>
+    </div>
+  </section>
+
+  <footer style="display:flex; flex-wrap:wrap; gap:14px; align-items:center; justify-content:space-between; padding:34px 0 44px; margin-top:34px; border-top:1px solid #EDEFF2; font-size:13px; color:#80868B;">
+    <span>ideolog.ia.br — domínio disponível para venda</span>
+    <span>Gustavo · <a href="https://wa.me/5516997520110" target="_blank" rel="noopener" style="color:#1A73E8; font-weight:700;">(16) 99752-0110</a></span>
+  </footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showIllustrations&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Conteúdo&quot;},&quot;showStatsBar&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Conteúdo&quot;},&quot;showAnatomy&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Conteúdo&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      showIllustrations: this.props.showIllustrations ?? true,
+      showStatsBar: this.props.showStatsBar ?? true,
+      showAnatomy: this.props.showAnatomy ?? true,
+    };
+  }
+}
+</script>
+</body>
+</html>
